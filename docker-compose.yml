@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  postgres:
+    image: postgres:14.0
+    restart: always
+    environment:
+      - POSTGRES_USER=renan
+      - POSTGRES_PASSWORD=renan123
+      - POSTGRES_DB=library
+    ports:
+      - '5432:5432'
